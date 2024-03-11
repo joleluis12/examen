@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/JBL-Logo.svg/1200px-JBL-Logo.svg.png" />
+    <link rel="stylesheet" href="./src/css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario API</title>
+</head>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="subir.html">subir</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="actualizar.html">Actualizar</a></li>
+    </ul>
+</nav>
+
+
+<body>
+    <div id="root">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Color</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="formulario">
+        <h2>Actualizar Producto</h2>
+        <form id="productForm">
+            <label for="productId">ID del Producto a Actualizar:</label>
+            <input type="text" id="productId" name="productId" /><br />
+
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" /><br />
+
+            <label for="description">Descripción:</label>
+            <input type="text" id="description" name="description" /><br />
+
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" /><br />
+
+            <label for="price">Precio:</label>
+            <input type="text" id="price" name="price" /><br />
+
+            <label for="imageUrl">URL de la Imagen:</label>
+            <input type="text" id="imageUrl" name="imageUrl" /><br /> 
+
+            <button type="submit">Actualizar</button>
+        </form>
+    </div>
+
+    <script src="./src/actualizar.js"></script>
+</body>
+</html>
